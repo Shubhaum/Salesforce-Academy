@@ -1,7 +1,7 @@
 // Mobile Menu and Smooth Scrolling Enhancements
 document.addEventListener('DOMContentLoaded', function() {
   
-  // Smooth scroll for anchor links
+  // Smooth scroll for anchor links (only for same-page navigation)
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -114,13 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
-
-  // Prevent double-tap zoom on buttons and links
-  document.addEventListener('touchend', function(e) {
-    if (e.target.closest('button, a')) {
-      e.preventDefault();
-    }
-  }, false);
 });
 
 // Responsive image loading (if images are added later)
