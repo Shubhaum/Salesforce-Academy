@@ -205,28 +205,325 @@ color:white;
 margin-top:30px;
 text-align:center;
 }
+
 .whatsapp-widget{
-
 position:fixed;
-
 bottom:25px;
 right:25px;
-
 background:#25D366;
-
 padding:15px 25px;
-
 border-radius:50px;
-
 text-decoration:none;
-
 color:white;
-
 font-weight:600;
-
 z-index:9999;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
 
-box-shadow:
-0 10px 30px rgba(0,0,0,.3);
+/* ===== MOBILE RESPONSIVENESS ===== */
 
+/* Tablet Devices */
+@media (max-width: 1024px) {
+.stats {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.cards {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/* Mobile Navigation and Layout */
+@media (max-width: 768px) {
+.navbar {
+padding: 15px 5%;
+flex-wrap: wrap;
+}
+
+.navbar ul {
+gap: 15px;
+font-size: 0.9rem;
+}
+
+.btn-primary {
+padding: 10px 20px;
+font-size: 0.9rem;
+}
+
+.btn-secondary {
+padding: 10px 20px;
+font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+flex-direction: column;
+padding: 60px 5%;
+gap: 30px;
+}
+
+.hero-left h1 {
+font-size: 2.5rem;
+}
+
+.hero-left h2 {
+font-size: 1.3rem;
+}
+
+.hero-buttons {
+flex-direction: column;
+}
+
+.glass-card {
+padding: 25px;
+}
+
+/* Stats Grid */
+.stats {
+grid-template-columns: repeat(2, 1fr);
+padding: 40px 5%;
+gap: 15px;
+}
+
+.stat {
+padding: 20px;
+}
+
+.stat h2 {
+font-size: 1.8rem;
+}
+
+/* Programs Cards */
+.cards {
+grid-template-columns: 1fr;
+}
+
+.card {
+padding: 25px;
+}
+
+.programs {
+padding: 60px 5%;
+}
+
+.programs h2 {
+font-size: 1.8rem;
+margin-bottom: 30px;
+}
+
+/* Form */
+.lead-form {
+padding: 60px 5%;
+}
+
+form {
+max-width: 100%;
+padding: 0;
+}
+
+input, textarea, select {
+padding: 12px;
+font-size: 16px;
+}
+
+button {
+padding: 12px;
+font-size: 1rem;
+}
+
+/* Footer */
+.premium-footer {
+padding: 40px 5%;
+}
+
+.footer-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+}
+
+.footer-grid h3 {
+font-size: 1rem;
+}
+
+.footer-grid p {
+font-size: 0.9rem;
+}
+
+.footer-grid ul {
+font-size: 0.9rem;
+}
+
+/* WhatsApp Widget */
+.whatsapp-widget {
+padding: 12px 20px;
+font-size: 0.85rem;
+bottom: 20px;
+right: 20px;
+}
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+.navbar {
+padding: 10px 3%;
+}
+
+.logo {
+font-size: 0.9rem;
+}
+
+.navbar ul {
+gap: 8px;
+font-size: 0.75rem;
+}
+
+.btn-primary, .btn-secondary {
+padding: 8px 16px;
+font-size: 0.8rem;
+}
+
+.hero {
+padding: 40px 3%;
+gap: 20px;
+}
+
+.hero-left h1 {
+font-size: 1.8rem;
+margin-bottom: 8px;
+}
+
+.hero-left h2 {
+font-size: 1.1rem;
+margin-bottom: 15px;
+}
+
+.hero-left p {
+font-size: 0.9rem;
+}
+
+.hero-buttons {
+flex-direction: column;
+gap: 10px;
+}
+
+.glass-card {
+padding: 20px;
+}
+
+.glass-card h3 {
+font-size: 1.1rem;
+}
+
+.glass-card ul {
+font-size: 0.9rem;
+}
+
+.stats {
+grid-template-columns: 1fr;
+padding: 30px 3%;
+gap: 15px;
+}
+
+.stat {
+padding: 20px;
+}
+
+.stat h2 {
+font-size: 1.5rem;
+}
+
+.stat p {
+font-size: 0.9rem;
+}
+
+.programs {
+padding: 40px 3%;
+}
+
+.programs h2 {
+font-size: 1.5rem;
+margin-bottom: 25px;
+}
+
+.card {
+padding: 20px;
+}
+
+.card h3 {
+font-size: 1.1rem;
+}
+
+.card p {
+font-size: 0.9rem;
+}
+
+.card ul {
+font-size: 0.9rem;
+padding-left: 20px;
+}
+
+.lead-form {
+padding: 40px 3%;
+}
+
+.lead-form h2 {
+font-size: 1.5rem;
+margin-bottom: 20px;
+}
+
+form {
+padding: 0;
+}
+
+input, textarea, select {
+padding: 10px;
+font-size: 16px;
+}
+
+button {
+padding: 10px;
+font-size: 0.95rem;
+}
+
+.premium-footer {
+padding: 30px 3%;
+}
+
+.footer-grid {
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+.footer-grid h3 {
+font-size: 0.95rem;
+margin-bottom: 10px;
+}
+
+.footer-grid p {
+font-size: 0.85rem;
+}
+
+.footer-grid ul {
+font-size: 0.85rem;
+}
+
+.footer-grid a {
+font-size: 0.85rem;
+}
+
+.copyright {
+font-size: 0.8rem;
+margin-top: 20px;
+}
+
+.whatsapp-widget {
+padding: 10px 15px;
+font-size: 0.75rem;
+bottom: 15px;
+right: 15px;
+}
 }
